@@ -1,0 +1,939 @@
+@import "fonts"
+
+//Common styles
+*
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+	box-sizing: border-box
+html
+	font-size: 10px
+body
+	font-family: 'SegoeUIRegular'
+a, a:hover, a:active, a:focus
+	text-decoration: none
+ul
+	list-style: none
+
+.container
+	width: 1170px
+	margin: 0 auto
+
+.btn
+	display: inline-block
+	font-size: 2rem
+	line-height: 4.6rem
+	padding: .7rem 4.5rem
+	border: .3rem solid #2276b6
+	border-radius: 4rem
+	text-transform: uppercase
+	cursor: pointer
+	color: #fff
+	&:hover, &:active
+		background-color: rgba(#fff, 1)
+		font-weight: bold
+		color: #2276b6
+
+//Header
+header
+	background-image: url(../img/header/background.jpg)
+	background-size: cover
+	color: #fff
+	padding: 8rem 0
+	text-transform: uppercase
+	a
+		color: #fff
+		font-size: 1.8rem
+.header-top
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	position: relative
+	a:hover, a:active
+		text-decoration: underline
+.top-nav
+	font-size: 1.8rem
+	width: 63.5rem
+	ul
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		li
+			position: relative
+			a
+				line-height: 3.6rem
+			&:hover
+				ul.sub-menu
+					display: inherit
+.top-phones
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	a
+		position: relative
+		line-height: 3rem
+		img
+			position: absolute
+			top: 50%
+			right: 100%
+			width: 2.4rem
+	a:first-child
+		img:nth-child(1)
+			transform: translate(-280%,-50%)
+		img:nth-child(2)
+			transform: translate(-160%,-50%)
+		img:nth-child(3)
+			transform: translate(-40%,-50%)
+	a:nth-child(2)
+		img:nth-child(1)
+			transform: translate(-40%,-50%)
+
+.logo img
+	width: 13.5rem
+.header-bott
+	padding: 25.5rem 0 20.5rem
+	font-size: 4.5rem
+	width: fit-content
+	text-align: center
+	h2
+		font-family: 'SegoeUIBold'
+		color: #2276b6
+		margin-bottom: 7rem
+
+//Footer
+.footer-top
+	background-color: #08090a
+	color: #fff
+	border-top: 3.5px solid #fff
+	padding: 4rem 0 5rem
+	font-size: 1.8rem
+	line-height: 2.4rem
+	font-family: 'SegoeUILight'
+	a, a:hover, a:active
+		color: #fff
+	a:hover
+		text-decoration: underline
+	.container
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		justify-content: space-between
+	h3
+		line-height: 3.6rem
+		text-transform: uppercase
+		font-family: 'SegoeUIRegular'
+		margin-bottom: 1rem
+
+.logo-footer img
+	width: 17.5rem
+	margin-bottom: 3rem
+.footer-services ul li
+	position: relative
+.footer-services ul li:before	
+	content: ""
+	position: absolute
+	top: 50%
+	right: 100%
+	width: 7px
+	height: 7px
+	border-right: 2px solid #2276b6
+	border-bottom: 2px solid #2276b6
+	transform: rotate(-45deg) translate(-40%,-100%)
+.footer-contacts ul li
+	position: relative
+	margin-bottom: 1rem
+	img
+		position: absolute
+		top: 50%
+		right: 100%
+		width: 2.4rem
+		transform: translate(-40%,-50%)
+.footer-contacts ul li:first-child
+	img:nth-child(2)
+		transform: translate(-280%,-50%)
+	img:nth-child(3)
+		transform: translate(-160%,-50%)
+	img:nth-child(4)
+		transform: translate(-40%,-50%)
+
+.footer-info
+	li
+		margin-bottom: 1rem
+.footer-bott .container
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+	padding: 5rem 0
+	font-size: 1.8rem
+	.feacher
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: flex-start
+		p
+			margin-right: 1rem
+		&:first-child
+			a img
+				width: 9.3rem
+		&:nth-child(2)
+			p
+				line-height: 0
+				img
+					width: 13rem
+					position: relative
+					top: 1.5rem
+					left: .5rem
+			a img
+				width: 7.3rem
+		&:nth-child(3)
+			a img
+				width: 17.3rem
+
+//Services block
+.bl-title
+	font-size: 1.6rem
+	line-height: 3.6rem
+	text-transform: uppercase
+	font-weight: bold
+	position: relative
+	margin-bottom: 1rem
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		right: 100%
+		width: 6.5rem
+		border-bottom: 2px solid #000
+		transform: translate(-40%,-100%)
+.services-bl
+	padding: 9.5rem 0
+	.container
+		padding: 0 10rem
+		&>p
+			font-size: 2.4rem
+			line-height: 2.4rem
+			font-style: italic
+			color: #7e7e7e
+			margin-bottom: 6.5rem
+.services-wrap
+	display: flex
+	flex-direction: row
+	align-items: flex-end
+	justify-content: space-between
+	flex-wrap: wrap
+	.service-cart
+		width: 27rem
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+		justify-content: space-between
+		margin-bottom: 4.5rem
+		&:hover
+			h4 a
+				text-decoration: underline
+			a h4
+				text-decoration: underline
+		img
+			width: 7rem
+			margin-right: 3.8rem
+		.cart-descr
+			a
+				color: #000
+			h4
+				font-size: 1.6rem
+				line-height: 2.4rem
+				margin-bottom: .5rem
+				a, a:hover, a:active
+					color: #000
+			p
+				font-size: 1.4rem
+				line-height: 1.8rem
+				color: #7e7e7e
+				a, a:hover, a:active
+					color: #000
+//About us section
+.about-bl
+	padding: 9.5rem 0
+	border-top: 2px solid #000
+	.container
+		padding: 0 10rem
+.about-cart
+	text-align: center
+	h1
+		font-size: 3.6rem
+		line-height: 6rem
+		text-transform: uppercase
+	h2
+		font-size: 4.8rem
+		line-height: 6rem
+		color: #2276b6
+		text-transform: uppercase
+		font-family: "SegoeUIBold"
+		margin-bottom: 3.5rem
+	p
+		font-size: 2.4rem
+		line-height: 3.6rem
+		color: #7e7e7e
+		margin-bottom: 3.5rem
+	.btn-white
+		display: inline-block
+		font-size: 2rem
+		line-height: 4.6rem
+		padding: .7rem 4.5rem
+		border: .3rem solid #2276b6
+		border-radius: 4rem
+		text-transform: uppercase
+		font-weight: bold
+		cursor: pointer
+		color: #000
+		&:hover, &:active
+			font-weight: bold
+			color: #2276b6
+
+//Count block
+.count-bl
+	padding: 9.5rem 0
+	background-color: #060606
+	.container
+		display: flex
+		flex-direction: row
+		justify-content: space-around
+		align-items: flex-start
+	.count p
+		&:first-child
+			font-family: "SegoeUIBlack"
+			font-size: 7.3rem
+			line-height: 7.3rem
+			color: #2276b6
+			margin-bottom: 1rem
+		&:last-child
+			font-size: 1.8rem
+			line-height: 1.6rem
+			color: #fff
+			position: relative
+			margin-left: 4.2rem
+			&:after
+				content: ""
+				position: absolute
+				top: .8rem
+				right: 100%
+				width: 3rem
+				border-bottom: 2px solid #fff
+				transform: translate(-40%,0%)
+//Tabs block
+.tabs-bl
+	padding: 9.5rem 0
+	.tab
+		li
+			font-size: 1.6rem
+			line-height: 3.6rem
+		p
+			font-size: 1.6rem
+	h3
+		margin-bottom: 2rem
+	.container
+		padding: 0 10rem
+.tabs-wrap
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+.tabs
+	width: 50rem
+	position: relative
+	right: 7rem
+	.slick-dots
+		display: none!important
+.tabs-nav
+	position: relative
+	left: 7rem
+	ol
+		counter-reset: myCounter
+		li
+			font-size: 1.8rem
+			line-height: 3.6rem
+			margin-bottom: 1.5rem
+			text-decoration: underline
+			list-style: none
+			cursor: pointer
+			&:hover
+				color: #2276b6
+				&:before
+					border: 2px solid #2276b6
+			&:before
+				counter-increment: myCounter
+				content: counter(myCounter)
+				display: inline-block
+				text-align: center
+				margin-right: 1.5rem
+				line-height: 1.8rem
+				font-size: 1.8rem
+				padding: .5rem 1rem
+				border: 2px solid #000
+				border-radius: 1rem
+.tab
+	img
+		width: 39rem
+		margin-bottom: 1rem
+	ul
+		margin-bottom: 3rem
+		li
+			font-size: 1.8rem
+			line-height: 3.6rem
+	.btn
+		font-size: 1.3rem
+		line-height: 3rem
+		padding: .5rem 3rem
+		margin-left: 5rem
+		color: #000
+		&:hover, &:active
+			font-weight: bold
+			color: #2276b6
+//Reviews block
+.reviews-bl
+	padding: 9.5rem 0
+	border-top: 2px solid #000
+	.container
+		padding: 0 10rem
+		position: relative
+		.left-arr
+			position: absolute
+			top: 50%
+			left: 8%
+			width: 1.5rem
+			height: 1.5rem
+			transform: rotate(-45deg)
+			border-left: 2px solid #000
+			border-top: 2px solid #000
+			z-index: 1
+			cursor: pointer
+		.right-arr
+			position: absolute
+			top: 50%
+			right: 8%
+			width: 1.5rem
+			height: 1.5rem
+			transform: rotate(45deg)
+			border-right: 2px solid #000
+			border-top: 2px solid #000
+			z-index: 1
+			cursor: pointer
+		&>p
+			font-size: 3.6rem
+			line-height: 6rem
+			text-transform: uppercase
+			margin-bottom: 2rem
+	.review
+		padding: 1rem 7rem
+		img
+			width: 9rem
+			margin-bottom: 3.5rem
+		p
+			font-size: 2.4rem
+			line-height: 2.4rem
+			font-style: italic
+			color: #7e7e7e	
+			margin-bottom: 3.5rem			
+		.author
+			font-size: 2.4rem
+			line-height: 2.4rem
+			font-family: "SegoeUILight"
+			font-style: normal
+			span
+				font-family: "SegoeUIRegular"
+				color: #000
+				line-height: 3.6rem
+
+//Interest block
+.interest-bl
+	padding: 9.5rem 0
+	background-color: #0b111e
+	color: #fff
+	.container
+		padding: 0 10rem
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+		justify-content: space-between
+		.btn:nth-child(3)
+			display: none
+.interest-title
+	p:first-child
+		font-size: 3.6rem
+		margin-bottom: 2rem
+	p:last-child
+		font-size: 1.8rem
+
+//Contacts page
+.contacts-bl
+	padding: 7rem 0
+	.container:first-child
+		padding: 0 10rem
+	h3
+		margin-bottom: 6rem
+
+.form-wrap
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	margin-bottom: 11rem
+.form
+	width: 47rem
+	height: 29rem
+	form
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: flex-start
+		height: 100%
+		position: relative
+		input[type="submit"]
+			position: absolute
+			top: calc(100% + 2rem)
+			left: 0
+			text-transform: uppercase
+			border-radius: 2.0rem
+			width: inherit
+			background-color: #fff
+		input, textarea
+			width: 100%
+			font-size: 1.6rem
+			line-height: 3rem
+			padding: .4rem 2.4rem
+			border-radius: 1.0rem
+			border: 1px solid #2276b6
+			color: #677b84
+#map iframe
+	width: 55rem
+	height: 29rem
+
+.contacts
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	align-items: flex-start
+	.contact
+		display: flex
+		flex-direction: column
+		width: 21rem
+		font-size: 1.6rem
+		position: relative
+		.contact-title
+			font-weight: bold
+			line-height: 3rem
+			margin-bottom: .5rem
+		a
+			color: #2276b6
+		img
+			position: absolute
+			top: .8rem
+			right: 110%
+			width: 2.5rem
+
+//Services page
+.services-pg
+	padding: 7rem 0
+	.services-list
+		display: none
+	.container:first-child
+		padding: 0 10rem
+	h3
+		margin-bottom: 6rem
+	.container:nth-child(2)
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: flex-start
+		.news-bar
+			margin-right: 4rem
+			.news-wrap
+				margin-bottom: 3rem
+				a
+					display: block
+					font-size: 1.8rem
+					line-height: 1.6rem
+					color: #7e7e7e
+					margin-bottom: 2.5rem
+					font-style: italic
+					text-decoration: underline
+					&:hover, &:active
+						color: #000
+				.service-bar
+					line-height: 3rem
+					margin-bottom: 0
+
+			.news-more
+				font-size: 1.4rem
+				line-height: 1.6rem
+				text-transform: uppercase
+				color: #1a7dc3
+				&:hover, &:active
+					text-decoration: underline
+
+	.services-wrap
+		align-items: flex-start
+		.services
+			margin-bottom: 6rem
+			width: 22.5rem
+			img
+				width: 22.5rem
+				height: 13.8rem
+			h4
+				font-size: 1.8rem
+				color: #1a7dc3
+				text-transform: uppercase
+				text-align: center
+				br, span
+					display: none
+//News page
+.news-pg
+	.services-wrap
+		.services
+			h4
+				text-transform: none
+				span
+					display: inherit
+					color: #7e7e7e
+					font-size: 1.4rem
+				br
+					display: inherit
+	.services-list
+		display: inherit
+.services-list	
+	.container:first-child
+		padding: 0 10rem
+		.bl-title
+			margin-bottom: 2.5rem
+		p
+			font-family: 'SegoeUILight'
+			font-style: italic
+			color: #7e7e7e
+			font-size: 1.6rem
+			line-height: 2.4rem
+			margin-bottom: 7.5rem
+	.container:nth-child(2)
+		padding: 0 10rem
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.service-list
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin: 0 2.2rem 3rem
+			max-width: 17rem
+			color: #000
+			&:hover
+				h4
+					text-decoration: underline
+			img
+				width: 7rem
+				margin-bottom: .5rem
+			h4
+				text-transform: uppercase
+				font-size: 1.6rem
+				text-align: center
+				font-weight: bold
+			&:first-child
+				margin-left: 0
+			&:last-child
+				margin-right: 0
+
+//News page
+.news-single
+	.news-content
+		margin-right: 12rem
+		.news-title
+			font-size: 1.8rem
+			color: #2276b6
+			margin-bottom: 1.5rem
+			text-transform: uppercase
+		&>p
+			font-size: 1.8rem
+			line-height: 1.8rem
+			font-style: italic
+			color: #7e7e7e
+			margin-bottom: 3.5rem
+		.news-body
+			width: 73rem
+			margin-bottom: 6.5rem
+			img
+				width: 100%
+				margin: 3rem 0
+			p, li
+				font-size: 1.8rem
+				margin-bottom: 2rem
+			ul				
+				padding-left: 3rem
+				margin-bottom: 2rem
+				li
+					list-style-image: url(../img/services/ok.png)
+					margin-bottom: 0
+			.style
+				padding: 1rem
+				border: 1px solid #2276b6
+				margin-bottom: 2rem
+				position: relative
+				&:after
+					content: ""
+					position: absolute
+					height: 1px
+					color: #fff
+					width: 84%
+					bottom: 0
+					left: 50%
+					transform: translate(-50%,1px)
+					border-bottom: 1px solid #fff
+				&:before
+					content: ""
+					position: absolute
+					height: 1px
+					color: #fff
+					width: 84%
+					top: 0
+					left: 50%
+					transform: translate(-50%,-1px)
+					border-top: 1px solid #fff
+				ul
+					li
+						list-style-type: disc
+						list-style-image: none
+						color: #7e7e7e
+						font-style: italic
+						font-size: 1.6rem
+				p
+					padding-left: 3rem
+			h4
+				font-size: 1.8rem
+				margin-bottom: 1rem
+			h1, h2, h3, h4, h5, h6
+				text-transform: uppercase
+				color: #2276b6
+				text-align: center
+.news-bar-title
+	text-align: center
+	font-size: 1.6rem
+	line-height: 3.6rem
+	position: relative
+	text-transform: uppercase
+	font-weight: bold
+	&:before
+		content: ""
+		width: 6.5rem
+		border-bottom: 2px solid #000
+		position: absolute
+		top: 50%
+		left: 0
+.services-pg .news-bar-title
+	display: none
+.services-pg.about-pg .news-bar-title
+	display: inherit
+//About pg
+.about-pg
+	.news-content
+		.news-title
+			font-size: 3.6rem
+			line-height: 3.6rem
+			color: #000
+			margin-bottom: 3rem
+			span
+				font-family: "SegoeUIBold"
+				color: #2276b6
+.adr-wrap
+	margin-left: 3rem
+	margin-bottom: 7rem
+	font-size: 1.8rem
+	line-height: 2.4rem
+	display: flex
+	flex-direction: column
+	.adr
+		margin-bottom: 2.5rem
+		h4
+			font-family: "SegoeUIBold"
+			position: relative
+		a
+			display: block
+			color: #2276b6
+			position: relative
+			&:active, &:hover
+				text-decoration: underline
+		.ab-adr
+			color: #7e7e7e
+			position: relative
+			&:before
+				content: ""
+				width: 1rem
+				height: 1.4rem
+				position: absolute
+				right: 105%
+				top: 1.2rem
+				transform: translate(0,-50%)
+				background-image: url(../img/about/location.png)
+				background-size: 100% 100%
+		.ab-mail
+			position: relative
+			&:before
+				content: ""
+				width: 1.6rem
+				height: 1.3rem
+				position: absolute
+				right: 105%
+				top: 1.2rem
+				transform: translate(0,-50%)
+				background-image: url(../img/about/mail.png)
+				background-size: 100% 100%
+		.ab-phone
+			position: relative
+			&:before
+				content: ""
+				width: 1.1rem
+				height: 1.4rem
+				position: absolute
+				right: 105%
+				top: 1.2rem
+				transform: translate(0,-50%)
+				background-image: url(../img/about/phone.png)
+				background-size: 100% 100%
+		.ab-whats
+			position: relative
+			&:before
+				content: ""
+				width: 1.5rem
+				height: 1.5rem
+				position: absolute
+				right: 105%
+				top: 1.2rem
+				transform: translate(0,-50%)
+				background-image: url(../img/about/whatsap.png)
+				background-size: 100% 100%
+
+//Hmburger menu
+.cmn-toggle-switch
+  display: none
+  position: relative
+  overflow: hidden
+  margin: 0
+  padding: 0
+  width: 8.125vw
+  height: 8.125vw
+  font-size: 0
+  appearance: none
+  box-shadow: none
+  border-radius: none
+  border: none
+  cursor: pointer
+  transition: background 0.3s
+
+.cmn-toggle-switch:focus 
+  outline: none 
+
+.cmn-toggle-switch span 
+  display: block
+  position: absolute
+  left: 0
+  right: 0
+  height: 5px
+  border-radius: 2.5px
+  background: #2276b6
+
+.cmn-toggle-switch span:before,
+.cmn-toggle-switch span:after 
+  position: absolute
+  display: block
+  left: 0
+  width: 100%
+  height: 5px
+  border-radius: 2.5px
+  background-color: #2276b6
+  content: "" 
+
+.cmn-toggle-switch span:before 
+  top: -2.5vw 
+
+.cmn-toggle-switch span:after 
+  bottom: -2.5vw 
+
+/**
+ * Style 2
+ *
+ * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+ * down to center and transform into an "x".
+ */
+.cmn-toggle-switch__htx 
+  background-color: transparent 
+
+.cmn-toggle-switch__htx span 
+  transition: background 0 0.3s 
+
+.cmn-toggle-switch__htx span:before,
+.cmn-toggle-switch__htx span:after
+	transition-duration: 0.3s, 0.3s
+	transition-delay: 0.3s, 0 
+
+.cmn-toggle-switch__htx span:before 
+  transition-property: top, transform
+
+.cmn-toggle-switch__htx span:after 
+  transition-property: bottom, transform
+
+/* active state, i.e. menu open */
+.cmn-toggle-switch__htx.active
+  background-color: transparent
+
+.cmn-toggle-switch__htx.active span
+  background: none
+
+.cmn-toggle-switch__htx.active span:before
+  top: 0
+  transform: rotate(45deg)
+
+.cmn-toggle-switch__htx.active span:after
+  bottom: 0
+  transform: rotate(-45deg)
+
+.cmn-toggle-switch__htx.active span:before,
+.cmn-toggle-switch__htx.active span:after
+	transition-delay: 0, 0.3s
+
+.top-menu-ad, .p-menu-ad
+	display: none
+
+ul.sub-menu
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	position: absolute
+	top: 100%
+	right: 0
+	background-color: #fff
+	padding: 2rem 1rem
+	box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, .5)
+	z-index: 1
+	display: none
+	li
+		text-align: right
+		&:last-child
+			border-bottom: 2px solid #2276b6
+		a
+			color: #000
+			font-size: 1.8rem
+			line-height: 3.6rem
+			font-family: "SegoeUISemiBold"
+			letter-spacing: 3px
+			&:hover, &:active
+				color: #2276b6
+
+.transl
+	position: absolute
+	top: 105%
+	right: 0
+
+@import "media"
